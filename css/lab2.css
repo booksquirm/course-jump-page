@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Outfit&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  @keyframes blur {
+    0% {
+      filter: blur(10px);
+    }
+    100% {
+      filter: blur(0);
+    }
+  }
+  
+  body {
+    animation: blur 3.5s ease-in-out;
+  }
+  
+  body {
+    background-attachment: fixed;
+    background-image: url('https://images.pexels.com/photos/7130490/pexels-photo-7130490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  header {
+    background: #226F54;
+    margin: 0;
+    padding:1rem;
+  }
+  
+  h1 {
+    animation: tunani 7s ease 1s 1 alternate forwards;
+    color: #F4F0BB;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  @keyframes tunani {
+    50% {
+      box-shadow: 0px 0px 50px #F4F0BB;
+    }	
+  }
+  
+    nav {
+     background-color: #87C38F;
+     padding: 1rem;
+  }
+  
+  nav ul {
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: #43291F;
+    text-decoration: none;
+    transition: transform 1s, opacity 2s;
+  }
+
+  nav a:hover {
+    color: #F4F0BB;
+    text-transform: uppercase;
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  
+  
+  main {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  h2, h3, p {
+    color: #43291F;
+  }
+
+  h3 {
+    font-family: 'Abril Fatface', cursive;
+  }
+
+  img {
+    width: 70%; 
+    height: auto; 
+   }
+
+  footer {
+    background: #F4F0BB;
+    font-size: 12px;
+    padding: 1rem;
+  }
+
+  @media screen and (min-width: 950px) {
+    main {
+      display: grid;
+      grid-gap:15px;
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows:auto 1fr auto;
+    }
+}

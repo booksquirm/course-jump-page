@@ -20,6 +20,11 @@
 
   h1 {
     font-family: 'Berkshire Swash', cursive;
+    font-size: xxx-large;
+  }
+
+  h3 {
+    font-family: 'Berkshire Swash', cursive;
   }
 
   .about {
@@ -33,6 +38,15 @@
 
   .about h3, aside h3 {
     margin-top: 0;
+  }
+
+  a {
+    color: #C5624D;
+  }
+
+  a:hover {
+    color: #D3AB9E;
+    text-decoration: overline;
   }
   
   aside {

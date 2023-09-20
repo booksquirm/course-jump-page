@@ -14,7 +14,7 @@
   }
   
   body {
-    animation: blur 3.5s ease-in-out;
+    animation: blur 2.5s ease-in-out;
   }
   
   body {
@@ -62,14 +62,11 @@
   nav a {
     color: #43291F;
     text-decoration: none;
-    transition: transform 1s, opacity 2s;
   }
 
   nav a:hover {
     color: #F4F0BB;
     text-transform: uppercase;
-    transform: scale(1.2);
-    opacity: 0;
   }
   
   
